@@ -141,9 +141,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid transparent;
+  border: 2px solid var(--color-transparent);
   padding: 0;
-  background-color: transparent;
+  background-color: var(--color-transparent);
   cursor: pointer;
   align-self: center;
   transition: border-color 0.3s ease;
@@ -173,11 +173,21 @@
 }
 
 .main-body {
-  fill: transparent;
+  fill: var(--color-transparent);
+  transition: 0.3s linear;
+}
+
+.core {
+  fill: var(--color-transparent);
+  transition: 0.3s 0.03s linear;
 }
 
 .sparks {
-  fill: transparent;
+  opacity: 0;
+}
+
+.contour {
+  transition: 0.1s linear;
 }
 
 .button:focus-visible {
