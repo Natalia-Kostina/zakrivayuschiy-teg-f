@@ -121,8 +121,7 @@
   filter: sepia(30%);
 }
 
-
-.section__text{
+.section__text {
   display: grid;
 }
 
@@ -153,10 +152,10 @@
 .button {
   position: relative;
   border: var(--border, 2px solid #000);
-  padding: 0;
   background-color: var(--bg-color, #fff);
   cursor: pointer;
   padding: 6.5px 35px;
+  transition: 0.3s ease;
 }
 
 .button__text {
@@ -166,10 +165,6 @@
   z-index: 1;
   color: var(--button-text-color, #fff);
   mix-blend-mode: difference;
-}
-
-.like-icon {
-  
 }
 
 .main-body {
@@ -233,6 +228,7 @@
   white-space: nowrap;
   cursor: pointer;
   gap: 8px;
+  transition: 0.3s ease;
 }
 
 .button-save svg {
@@ -241,10 +237,6 @@
   mix-blend-mode: difference;
   color: var(--primary-white, white);
   z-index: 1;
-}
-
-.modal__title {
-  font-family: var(--accent-ffamily);
 }
 
 .modal[open] {
@@ -279,9 +271,11 @@
   .header-logo {
     font-size: 49px;
   }
-  .title{
+
+  .title {
     font-size: var(--fsize-button, 14px);
   }
+
   .button-save {
       flex-direction: column;
   }
