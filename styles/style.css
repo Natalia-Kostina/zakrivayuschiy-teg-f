@@ -93,6 +93,35 @@
   }
 }
 
+.images_sepia-brightness {
+  filter: sepia(30%) brightness(90%);
+}
+
+.images_contrast {
+  filter: contrast(120%);
+}
+
+.images_invert {
+  filter: invert(0.7) contrast(300%);
+}
+
+.images_saturate {
+  filter: saturate(158%);
+}
+
+.images_brightness {
+  filter: brightness(30%);
+}
+
+.images_grayscale {
+    filter: grayscale(0.5);
+}
+
+.images_sepia {
+  filter: sepia(30%);
+}
+
+
 .section__text{
   display: grid;
 }
@@ -105,7 +134,7 @@
   display: flex;
   justify-content: flex-end;
   padding: 25px;
-  gap: 10px;
+  gap: 5px;
 }
 
 .card__like-button {
@@ -113,11 +142,12 @@
   justify-content: center;
   align-items: center;
   border: 2px solid transparent;
-  padding: 1px 0;
+  padding: 0;
   background-color: transparent;
   cursor: pointer;
   align-self: center;
   transition: border-color 0.3s ease;
+  
 }
 
 .button {
@@ -126,7 +156,7 @@
   padding: 0;
   background-color: var(--bg-color, #fff);
   cursor: pointer;
-  padding: 5px 35px;
+  padding: 6.5px 35px;
 }
 
 .button__text {
@@ -140,6 +170,14 @@
 
 .like-icon {
   
+}
+
+.main-body {
+  fill: transparent;
+}
+
+.sparks {
+  fill: transparent;
 }
 
 .button:focus-visible {
@@ -169,35 +207,6 @@
   border: 2px solid var(--accent-color);
   padding: 3px;
 }
-
-.images_sepia-brightness {
-  filter: sepia(30%) brightness(90%);
-}
-
-.images_contrast {
-  filter: contrast(120%);
-}
-
-.images_invert {
-  filter: invert(0.7) contrast(300%);
-}
-
-.images_saturate {
-  filter: saturate(158%);
-}
-
-.images_brightness {
-  filter: brightness(30%);
-}
-
-.images_grayscale {
-    filter: grayscale(0.5);
-}
-
-.images_sepia {
-  filter: sepia(30%);
-}
-
 .section__save {
   display: flex;
   flex-direction: column;
