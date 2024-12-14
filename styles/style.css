@@ -23,7 +23,7 @@
   background-attachment: fixed;
 }
 
-@supports(font-variation-settings: "wght" var(--main-weight)) {
+@supports (font-variation-settings: "wght" var(--main-weight)) {
   .page {
     font-family: var(--ffamily, monospace); 
   }
