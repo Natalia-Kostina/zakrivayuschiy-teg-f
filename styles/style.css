@@ -23,17 +23,11 @@
   background-attachment: fixed;
 }
 
-@supports (font-variation-settings: "wght" var(--ffamily)) {
-  .page {
-    font-family: var(--ffamily, monospace); 
-  }
-}
-
 .section {
   display: flex;
   flex-direction: column;
   align-content: center;
-  inline-size: var(--inline-size, 50%);
+  max-inline-size: var(--inline-size, 50%);
   margin: auto;
   border: 2px solid black;
   margin-bottom: 50px;
@@ -44,19 +38,20 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  flex-wrap: wrap;
-  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem) 0 clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem);
+  padding-block: clamp(120px, 8.9vw, 128px);
   margin-block-end: 100px;
+  inline-size: var(--inline-size, min(100vw, 700px));
 }
 
 .header-logo {
-  font-family: var(--accent-ffamily), fantasy;
-  font-size: var(--fsize-header-logo);
+  margin: auto;
+  font-family: var(--accent-ffamily, fantasy);
+  font-size: var(--fsize-header-logo, clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem));
 }
 
 .title {
-  font-family: var(--accent-ffamily), fantasy;
-  font-size: var(--fsize-header);
+  font-family: var(--accent-ffamily, fantasy);
+  font-size: var(--fsize-header, clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem));
   text-transform: uppercase;
   text-align: center;
   margin-top: 20px;
@@ -69,6 +64,7 @@
 
 .section__image {
   position: relative;
+  block-size: var(--section-inline-size, clamp(375px, 100vw, 700px));
 }
 
 .images {
@@ -285,6 +281,10 @@
 }
 
 @media (width <= 375px) {
+  .header {
+    padding: 120px 14px;
+  }
+
   .button-save {
       flex-direction: column;
   }
