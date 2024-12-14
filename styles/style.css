@@ -46,12 +46,12 @@
 .header-logo {
   margin: auto;
   font-family: var(--accent-ffamily, fantasy);
-  font-size: var(--fsize-header-logo, clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem));
+  font-size: var(--fsize-header-logo, clamp(3.0625rem, 2.7105rem + 1.5025vw, 4.0625rem));
 }
 
 .title {
   font-family: var(--accent-ffamily, fantasy);
-  font-size: var(--fsize-header, clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem));
+  font-size: var(--fsize-header, clamp(0.875rem, 0.6770rem + 0.8451vw, 1.4375rem));
   text-transform: uppercase;
   text-align: center;
   margin-top: 20px;
@@ -281,10 +281,6 @@
 }
 
 @media (width <= 375px) {
-  .header {
-    padding: 120px 14px;
-  }
-
   .button-save {
       flex-direction: column;
   }
