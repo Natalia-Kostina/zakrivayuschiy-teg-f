@@ -228,7 +228,6 @@
 .button-save {
   display: flex;
   align-items: center;
-  gap: 0.53rem;
   inline-size: clamp(310px, 81.6vw, 339px);
   block-size: clamp(55px, calc(84px - (84 - 55) * ((100vw - 375px) / (1440 - 375))), 84px);
   margin: auto;
