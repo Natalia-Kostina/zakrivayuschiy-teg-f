@@ -15,7 +15,7 @@
   flex-direction: column;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--ffamily, monospace);
+  font-family: var(--ffamily, sans-serif, monospace);
   font-size: var(--fsize-text, 18px);
   padding: 100px 0;
   background-image: var(--bg-image, repeating-linear-gradient(to right, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), repeating-linear-gradient(to bottom, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a));
@@ -61,7 +61,7 @@
 .section__title {
   font-size: var(--fsize-text, 18px);
   margin: 5px 10px;
-  font-variation-settings: "wght" 785;
+  font-variation-settings: "wght" 700;
 }
 
 .section__image {
@@ -133,6 +133,7 @@
 
 .text {
   padding: 26px 25px 0;
+  line-height: 21px;
 }
 
 .section__like-buttom {
@@ -161,7 +162,7 @@
 }
 
 .button__text {
-  font-family: var(--accent-ffamily, #000);
+  font-family: var(--accent-ffamily, fantasy);
   font-size: var(--fsize-button, 14px);
   position: relative;
   z-index: 1;
